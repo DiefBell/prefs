@@ -1,0 +1,20 @@
+{
+	"name": "@dief/prefs",
+	"version": "1.0.0",
+	"description": "My personal, opinionated prefs",
+	"files": [
+		"eslintrc/*"
+	],
+	"repository": "https://github.com/DiefBell/prefs.git",
+	"author": "diefbell <diefenbaker.bell@gmail.com>",
+	"license": "Unlicense",
+	"dependencies": {
+		"@types/eslint": "8.56.0",
+		"@typescript-eslint/eslint-plugin": "^8.3.0",
+		"@typescript-eslint/parser": "^8.3.0",
+		"eslint": "8.56.0",
+		"eslint-config-next": "^14.2.7",
+		"eslint-plugin-react": "^7.35.0",
+		"eslint-plugin-react-hooks": "4.6.2"
+	}
+}
