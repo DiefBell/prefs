@@ -1,27 +1,27 @@
+
 /**
  * Requires:
  *   - eslint
- *   - @typescript-eslint/eslint-plugin
  *   - @typescript-eslint/parser
- *   - eslint-plugin-react
- *   - eslint-plugin-react-hooks
+ *   - @stylistic/eslint-plugin
  */
 /** @type {import("eslint").Linter.Config} */
 const config = {
+	plugins: [],
 	extends: [
-		"./core.js",
-		"plugin:react/recommended",
+		"./core.cjs",
 	],
 	rules: {
-		"react/function-component-definition": ["warn", { namedComponents: "arrow-function", unnamedComponents: "arrow-function" }],
-		"react/jsx-indent": [
-			"error",
-			"tab",
-			{
-				checkAttributes: true,
-				indentLogicalExpressions: true
-			}
-		],
+		// "@stylistic/function-component-definition": ["warn", { namedComponents: "arrow-function", unnamedComponents: "arrow-function" }],
+		// "@stylistic/jsx-indent": [
+		// 	"error",
+		// 	"tab",
+		// 	{
+		// 		checkAttributes: true,
+		// 		indentLogicalExpressions: true
+		// 	}
+		// ],
+		"@stylistic/jsx-indent-props": ["error", "tab"]
 	},
 };
 

@@ -1,16 +1,14 @@
 /**
  * Requires:
  *   - eslint
- *   - @typescript-eslint/eslint-plugin
  *   - @typescript-eslint/parser
- *   - eslint-plugin-react
- *   - eslint-plugin-react-hooks
+ *   - @stylistic/eslint-plugin
  *   - eslint-config-next
  */
 /** @type {import("eslint").Linter.Config} */
 const config = {
 	extends: [
-		"./react.js",
+		"./react.cjs",
 		"next/core-web-vitals",
 	],
 	rules: {

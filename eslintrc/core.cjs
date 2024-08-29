@@ -1,24 +1,24 @@
-// eslint-disable-next-line @typescript-eslint/no-var-requires
-const path = require("path");
+// const path = require("path");
+// const stylistic = require("@stylistic/eslint-plugin");
 
 /**
  * Requires:
  *   - eslint
- *   - @typescript-eslint/eslint-plugin
  *   - @typescript-eslint/parser
+ *   - @stylistic/eslint-plugin
  */
 /** @type {import("eslint").Linter.Config} */
 const config = {
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
-		project: path.join(__dirname, "tsconfig.json"),
+		// project: path.join(process.cwd, "tsconfig.json"),
 	},
-	plugins: ["@typescript-eslint"],
+	plugins: [
+		"@stylistic",
+		"@typescript-eslint"
+	],
 	extends: [
-		"plugin:@typescript-eslint/recommended",
-		"plugin:@typescript-eslint/recommended-requiring-type-checking",
-		"plugin:@typescript-eslint/recommended-type-checked",
-		"plugin:@typescript-eslint/stylistic-type-checked"
+		"plugin:@stylistic/recommended-extends"
 	],
 	rules: {
 		// Helps with tree shaking, I think
@@ -35,6 +35,7 @@ const config = {
 			"error",
 			{ "ts-ignore": "allow-with-description" },
 		],
+		"@typescript-eslint/no-explicit-any": "warn",
 
 		// Warn if any vars are unused, but ignore it if the var is just "_".
 		"no-unused-vars": "off",
@@ -42,19 +43,20 @@ const config = {
 
 		// Have semi-colons
 		"semi": ["off"],
-		"@typescript-eslint/semi": ["warn"],
+		"@stylistic/semi": ["warn"],
 
 		// Double quotes
-		"quotes": ["warn", "double"],
-		"@typescript-eslint/no-explicit-any": "warn",
+		"quotes": "off",
+		"@stylistic/quotes": ["error", "double"],
 
 		// Alman brace styling
 		"brace-style": "off",
-		"@typescript-eslint/brace-style": ["error", "allman"],
+		"@stylistic/brace-style": ["error", "allman"],
 
 		// Index with tabs instead of spaces
 		"indent": "off",
-		"@typescript-eslint/indent": ["error", "tab"],
+		"@stylistic/no-tabs": "off",
+		"@stylistic/indent": ["error", "tab"],
 
 		// I like to be able to use if occassionally for lazy debugging
 		"no-console": "warn",
