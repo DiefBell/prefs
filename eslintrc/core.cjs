@@ -43,7 +43,7 @@ const config = {
 
 		// Have semi-colons
 		"semi": ["off"],
-		"@stylistic/semi": ["warn"],
+		"@stylistic/semi": ["error", "always"],
 
 		// Double quotes
 		"quotes": "off",
