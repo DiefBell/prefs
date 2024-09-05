@@ -43,25 +43,50 @@ const config = {
 
 		// Have semi-colons
 		"semi": ["off"],
-		"@stylistic/semi": ["error", "always"],
+		"@stylistic/semi": ["warn", "always"],
 
 		// Double quotes
 		"quotes": "off",
-		"@stylistic/quotes": ["error", "double"],
+		"@stylistic/quotes": ["warn", "double"],
 
 		// Alman brace styling
 		"brace-style": "off",
-		"@stylistic/brace-style": ["error", "allman"],
+		"@stylistic/brace-style": ["warn", "allman"],
 
 		// Index with tabs instead of spaces
 		"indent": "off",
 		"@stylistic/no-tabs": "off",
-		"@stylistic/indent": ["error", "tab"],
+		"@stylistic/indent": ["warn", "tab"],
+		"@stylistic/indent-binary-ops": ["warn", "tab"],
 
 		// I like to be able to use if occassionally for lazy debugging
 		"no-console": "warn",
 
-		"arrow-body-style": ["warn", "as-needed"]
+		"arrow-body-style": ["warn", "as-needed"],
+		"@stylistic/arrow-parens": ["warn", "always"],
+		"@stylistics/member-delimiter-style": ["warn", {
+			"multiline": {
+				"delimiter": "comma",
+				"requireLast": true
+			},
+			"singleline": {
+				"delimiter": "comma",
+				"requireLast": true
+			},
+			"overrides": {
+				"interface": {
+					"multiline": {
+						"delimiter": "semi",
+						"requireLast": true
+					}
+				}
+			}
+		}],
+		"@stylistic/keyword-spacing": ["warn", {
+			"overrides": {
+				"if": { "after": "false" }
+			}
+		}]
 	},
 };
 
