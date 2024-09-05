@@ -64,7 +64,7 @@ const config = {
 
 		"arrow-body-style": ["warn", "as-needed"],
 		"@stylistic/arrow-parens": ["warn", "always"],
-		"@stylistics/member-delimiter-style": ["warn", {
+		"@stylistic/member-delimiter-style": ["warn", {
 			"multiline": {
 				"delimiter": "comma",
 				"requireLast": true
@@ -84,7 +84,7 @@ const config = {
 		}],
 		"@stylistic/keyword-spacing": ["warn", {
 			"overrides": {
-				"if": { "after": "false" }
+				"if": { "after": false }
 			}
 		}]
 	},
