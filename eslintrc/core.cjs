@@ -15,7 +15,8 @@ const config = {
 	},
 	plugins: [
 		"@stylistic",
-		"@typescript-eslint"
+		"@typescript-eslint",
+		"@stylistic/eslint-plugin-js"
 	],
 	extends: [
 		"plugin:@stylistic/recommended-extends"
