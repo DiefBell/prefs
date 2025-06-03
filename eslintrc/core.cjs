@@ -7,11 +7,12 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
 	parser: "@typescript-eslint/parser",
-	/*** Add this to .eslintrc.cjs ***/
-	// parserOptions: {
-	// 	project: './tsconfig.json',
-	// 	tsconfigRootDir: __dirname,
-	// },
+	parserOptions: {
+		project: './tsconfig.json',
+		tsconfigRootDir: __dirname,
+	},
+
+
 	plugins: [
 		"@stylistic",
 		"@typescript-eslint",
