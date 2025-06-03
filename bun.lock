@@ -3,22 +3,13 @@
   "workspaces": {
     "": {
       "name": "@dief/prefs",
-      "devDependencies": {
-        "@stylistic/eslint-plugin": "^2.7.2",
-        "@stylistic/eslint-plugin-js": "^2.7.2",
-        "@types/eslint": "^8.56.10",
-        "@typescript-eslint/eslint-plugin": "^8.3.0",
-        "@typescript-eslint/parser": "^8.3.0",
-        "eslint": "^8.57.0",
-      },
       "peerDependencies": {
-        "@stylistic/eslint-plugin": "^2.7.2",
-        "@stylistic/eslint-plugin-js": "^2.7.2",
-        "@types/eslint": "^8.56.10",
-        "@typescript-eslint/eslint-plugin": "^8.3.0",
-        "@typescript-eslint/parser": "^8.3.0",
-        "eslint": "^8.57.0",
-        "eslint-config-next": "^14.2.7",
+        "@stylistic/eslint-plugin": "4.4.0",
+        "@types/eslint": "8.56.10",
+        "@typescript-eslint/eslint-plugin": "8.3.0",
+        "@typescript-eslint/parser": "8.3.0",
+        "eslint": "8.57.0",
+        "eslint-config-next": "14.2.7",
       },
     },
   },
@@ -64,8 +55,6 @@
     "@rushstack/eslint-patch": ["@rushstack/eslint-patch@1.11.0", "", {}, "sha512-zxnHvoMQVqewTJr/W4pKjF0bMGiKJv1WX7bSrkl46Hg0QjESbzBROWK0Wg4RphzSOS5Jiy7eFimmM3UgMrMZbQ=="],
 
     "@stylistic/eslint-plugin": ["@stylistic/eslint-plugin@2.13.0", "", { "dependencies": { "@typescript-eslint/utils": "^8.13.0", "eslint-visitor-keys": "^4.2.0", "espree": "^10.3.0", "estraverse": "^5.3.0", "picomatch": "^4.0.2" }, "peerDependencies": { "eslint": ">=8.40.0" } }, "sha512-RnO1SaiCFHn666wNz2QfZEFxvmiNRqhzaMXHXxXXKt+MEP7aajlPxUSMIQpKAaJfverpovEYqjBOXDq6dDcaOQ=="],
-
-    "@stylistic/eslint-plugin-js": ["@stylistic/eslint-plugin-js@2.13.0", "", { "dependencies": { "eslint-visitor-keys": "^4.2.0", "espree": "^10.3.0" }, "peerDependencies": { "eslint": ">=8.40.0" } }, "sha512-GPPDK4+fcbsQD58a3abbng2Dx+jBoxM5cnYjBM4T24WFZRZdlNSKvR19TxP8CPevzMOodQ9QVzNeqWvMXzfJRA=="],
 
     "@tybys/wasm-util": ["@tybys/wasm-util@0.9.0", "", { "dependencies": { "tslib": "^2.4.0" } }, "sha512-6+7nlbMVX/PVDCwaIQ8nTOPveOcFLSt8GcXdx8hD0bt39uWxYT88uXzqTd4fTvqta7oeUJqudepapKNt2DYJFw=="],
 
