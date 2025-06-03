@@ -6,23 +6,23 @@
  *   - @stylistic/eslint-plugin
  */
 /** @type {import("eslint").Linter.Config} */
-const config = {
+module.exports = {
 	plugins: [],
 	extends: [
 		"./core.cjs",
 	],
 	rules: {
-		// "@stylistic/function-component-definition": ["warn", { namedComponents: "arrow-function", unnamedComponents: "arrow-function" }],
-		// "@stylistic/jsx-indent": [
-		// 	"error",
-		// 	"tab",
-		// 	{
-		// 		checkAttributes: true,
-		// 		indentLogicalExpressions: true
-		// 	}
-		// ],
-		"@stylistic/jsx-indent-props": ["error", "tab"]
+		"@stylistic/function-component-definition": ["warn", { namedComponents: "arrow-function", unnamedComponents: "arrow-function" }],
+		"@stylistic/jsx-indent": [
+			"error",
+			"tab",
+			{
+				checkAttributes: true,
+				indentLogicalExpressions: true
+			}
+		],
+		"@stylistic/jsx-indent-props": ["error", "tab"],
+		"react/jsx-wrap-multilines": ["warn", { declaration: "parens-new-line" }],
+		"@stylistic/jsx/jsx-pascal-case": "warn",
 	},
 };
-
-module.exports = config;

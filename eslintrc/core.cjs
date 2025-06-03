@@ -1,6 +1,3 @@
-// const path = require("path");
-// const stylistic = require("@stylistic/eslint-plugin");
-
 /**
  * Requires:
  *   - eslint
@@ -8,7 +5,7 @@
  *   - @stylistic/eslint-plugin
  */
 /** @type {import("eslint").Linter.Config} */
-const config = {
+module.exports = {
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
 		// project: path.join(process.cwd, "tsconfig.json"),
@@ -19,6 +16,7 @@ const config = {
 		"@stylistic/eslint-plugin-js"
 	],
 	extends: [
+		"plugin:@typescript-eslint/recommended-type-checked",
 		"plugin:@stylistic/recommended-extends"
 	],
 	rules: {
@@ -87,8 +85,13 @@ const config = {
 			"overrides": {
 				"if": { "after": false }
 			}
-		}]
+		}],
+
+		// Max line length
+		"max-len": "off",
+		"@stylistic/max-len": ["warn", { code: 120, ignoreStrings: true }],
+
+		// misc
+		"@stylistic/multiline-ternary": "off",
 	},
 };
-
-module.exports = config;

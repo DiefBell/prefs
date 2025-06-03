@@ -6,14 +6,12 @@
  *   - eslint-config-next
  */
 /** @type {import("eslint").Linter.Config} */
-const config = {
+module.exports = {
 	extends: [
 		"./react.cjs",
 		"next/core-web-vitals",
 	],
 	rules: {
-
+		
 	},
 };
-
-module.exports = config;
