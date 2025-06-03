@@ -6,7 +6,9 @@
  */
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
-	plugins: [],
+	plugins: [
+		"@stylistic/eslint-plugin-jsx"
+	],
 	extends: [
 		"./core.cjs",
 	],
