@@ -7,16 +7,19 @@
 /** @type {import("eslint").Linter.Config} */
 module.exports = {
 	parser: "@typescript-eslint/parser",
-	parserOptions: {
-		// project: path.join(process.cwd, "tsconfig.json"),
-	},
+	/*** Add this to .eslintrc.cjs ***/
+	// parserOptions: {
+	// 	project: './tsconfig.json',
+	// 	tsconfigRootDir: __dirname,
+	// },
 	plugins: [
 		"@stylistic",
 		"@typescript-eslint",
 		"@stylistic/eslint-plugin-js"
 	],
 	extends: [
-		"plugin:@typescript-eslint/recommended-type-checked",
+		'plugin:@typescript-eslint/recommended',
+		'plugin:@typescript-eslint/recommended-requiring-type-checking',
 		"plugin:@stylistic/recommended-extends"
 	],
 	rules: {

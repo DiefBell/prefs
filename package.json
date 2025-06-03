@@ -5,19 +5,13 @@
 	"repository": "https://github.com/DiefBell/prefs.git",
 	"peerDependencies": {
 		"@stylistic/eslint-plugin": "2.7.1",
+		"@stylistic/eslint-plugin-js": "2.7.1",
 		"@stylistic/eslint-plugin-jsx": "2.7.1",
 		"@types/eslint": "8.56.10",
 		"@typescript-eslint/eslint-plugin": "8.3.0",
 		"@typescript-eslint/parser": "8.3.0",
 		"eslint": "8.57.0",
 		"eslint-config-next": "14.2.7"
-	},
-	"devDependencies": {
-		"@stylistic/eslint-plugin": "2.7.1",
-		"@types/eslint": "8.56.10",
-		"@typescript-eslint/eslint-plugin": "8.3.0",
-		"@typescript-eslint/parser": "8.3.0",
-		"eslint": "8.57.0"
 	},
 	"description": "My personal, opinionated prefs",
 	"files": [

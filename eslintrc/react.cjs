@@ -1,4 +1,3 @@
-
 /**
  * Requires:
  *   - eslint
