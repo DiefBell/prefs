@@ -8,20 +8,19 @@
 module.exports = {
 	parser: "@typescript-eslint/parser",
 	parserOptions: {
-		project: './tsconfig.json',
+		project: "./tsconfig.json",
 		tsconfigRootDir: __dirname,
 	},
 
-
 	plugins: [
 		"@stylistic",
-		"@typescript-eslint",
-		"@stylistic/eslint-plugin-js"
+		"@typescript-eslint"
 	],
 	extends: [
-		'plugin:@typescript-eslint/recommended',
-		'plugin:@typescript-eslint/recommended-requiring-type-checking',
-		"plugin:@stylistic/recommended-extends"
+		"plugin:@typescript-eslint/recommended",
+		"plugin:@typescript-eslint/recommended-requiring-type-checking",
+		"plugin:@typescript-eslint/recommended",
+   		"plugin:@stylistic/recommended-type-checked",
 	],
 	rules: {
 		// Helps with tree shaking, I think
