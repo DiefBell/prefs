@@ -1,19 +1,18 @@
 {
 	"name": "@dief/prefs",
-	"version": "2.1.0",
+	"version": "2.1.1",
 	"author": "diefbell <diefenbaker.bell@gmail.com>",
 	"repository": "https://github.com/DiefBell/prefs.git",
-	"type": "module",
+	"dependencies": {},
 	"peerDependencies": {
 		"@eslint/eslintrc": "3.3.1",
 		"@eslint/js": "9.28.0",
-		"@next/eslint-plugin-next": "^15.5.4",
+		"@next/eslint-plugin-next": "15.5.4",
 		"@stylistic/eslint-plugin": "4.4.0",
-		"@types/bun": "1.2.15",
 		"@types/eslint": "9.6.1",
 		"eslint": "9.28.0",
 		"eslint-config-next": "15.3.3",
-		"eslint-plugin-react": "^7.37.5",
+		"eslint-plugin-react": "7.37.5",
 		"typescript-eslint": "8.33.1"
 	},
 	"description": "My personal, opinionated prefs",
@@ -25,8 +24,5 @@
 		"lint": "eslint ./eslintrc/*.cjs",
 		"format": "eslint ./eslintrc/*.cjs --fix"
 	},
-	"dependencies": {},
-	"devDependencies": {
-		"@types/bun": "^1.2.15"
-	}
+	"type": "module"
 }
